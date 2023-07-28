@@ -1,2 +1,2 @@
-print(max([1,2,3]))
-max()
+from operator import add
+print(add([1,2,3]))
