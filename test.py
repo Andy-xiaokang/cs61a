@@ -1,2 +1,1 @@
-from operator import add
-print(add([1,2,3]))
+print(round(1.2))
