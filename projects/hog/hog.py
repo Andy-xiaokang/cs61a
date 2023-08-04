@@ -413,7 +413,7 @@ def final_strategy(score, opponent_score):
     for i in average_roll_dice_scores:
         if score + round(i) < opponent_score and is_swap(score + round(i), opponent_score):
             return average_roll_dice_scores.index(i) + 1
-    swap_strategy_nums = swap_strategy(score, opponent_score, 15, 4)
+    swap_strategy_nums = swap_strategy(score, opponent_score, 12, 4)
     return swap_strategy_nums
     
 
