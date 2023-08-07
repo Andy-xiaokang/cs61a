@@ -1,1 +1,2 @@
-print(([1, 2, 3] - [1,2]))
+print("I".join("am"))
+print ("I"+"am")

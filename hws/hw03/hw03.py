@@ -204,5 +204,12 @@ def make_anonymous_factorial():
     >>> check(HW_SOURCE_FILE, 'make_anonymous_factorial', ['Assign', 'AugAssign', 'FunctionDef', 'Recursion'])
     True
     """
-    return "can't figure out!"
+    return (lambda f: lambda k: f(f, k))(lambda f, k: 1 if k == 1 else mul(k, f(f, sub(k, 1))))
+    # return (lambda f: f(f))(lambda f: lambda k: 1 if k == 1 else mul(k, f(f)(sub(k, 1))))
 
+    """
+    在执行完make_anonymous_factorial()后，第一个括号里的f 是不是锁住了是第二个大括号里的带两个参数的lambda函数
+    然后再传入参数5返回，f(f,5), 这里的函数f, 和形式参数f,其实都固定成了第二个大括号里的带两个参数的lambda函数
+    同时把函数当做函数调用(call)和数据(data) 来用
+    最后的mul(k, f(f, sub(k, 1)))， f(f, sub(k, 1))根据k的值不断执行mul(k, f(f, sub(k, 1)))寻找递归出口
+    """
