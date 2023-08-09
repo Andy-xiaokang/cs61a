@@ -1,2 +1,2 @@
-print("I".join("am"))
-print ("I"+"am")
+a = [1, 2, 3]
+print(sum(a[:3]))
