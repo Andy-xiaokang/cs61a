@@ -21,23 +21,25 @@ project2 cat
 ### Object-Oriented Programming 
 lab08 lab09  
 hw06  
-project3 ants 
+project3 ants  
+
 把面向对象和函数式编程这两个学好对学好Python有极大地帮助，函数式编程和抽象数据类型也可以说是其他语言的核心内容，面向对象这里包含着Python里面的很多可能新手看不出来的小细节和约定俗成的东西（比如接口、序列、迭代器包括异常等等），学好就可以解决一类问题。
 ## Chapter 3: Interpreting Computer Programs  
-lab10 lab11 lab12
-hw07
+lab10 lab11 lab12  
+hw07  
 project4  
+
 project4 是综合性最高的一个project，也是质量最高的一个project，抽象数据类型，函数式编程，特别是里面的递归，解释器里的`REPL`里面的`read`和`eval`处理细节，感觉就很综合。  
 前面15题真的多是带着手把手教你写一个解释器，最后五题就有些拔高了，写不出来可以参照flyingpig 的代码多理解理解，比如我。  
 scheme 语言是真的简洁，因为没有迭代，所有的代码几乎都围绕递归，所以代码量极少，是真的elegant.
 ## Chapter 4: Data Processing 
-这个没有什么好说的。
+这个没有什么好说的.  
 lab12 lab13 hw08
 ## final review 
 lab14 hw09 
 ## suggestion
 看完视频之后一定要精读课本，课本写的很精彩，前三章是精华，有些地方要多读很多遍，project有的地方比较难写，可以在纸上一边做一边推演一下，很管用。
 
-下一站 CS61B                                                                     --2023.9.6 日晚
+下一站 CS61B                                                                     --2023.9.7 日晚
 
 
